@@ -1,8 +1,66 @@
-﻿@page
+﻿
+@page
 @model PrivacyModel
 @{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Employee Directory";
 }
-<h1>@ViewData["Title"]</h1>
-
-<p>Use this page to detail your site's privacy policy.</p>
+<h1 style="font-family: 'Segoe UI', Courier, monospace; color: #2c3e50; font-weight: bold; margin-bottom: 24px;">@ViewData["Title"]</h1>
+<div class="employee-table-container">
+    <table class="employee-table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Hiring Date</th>
+                <th>Department</th>
+                <th>Job Title</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var emp in Model.Employees)
+        {
+            <tr>
+                <td>@emp.FirstName</td>
+                <td>@emp.LastName</td>
+                <td>@emp.HiringDate.ToString("yyyy-MM-dd")</td>
+                <td>@emp.Department</td>
+                <td>@emp.JobTitle</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+<style>
+    .employee-table-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #f8f9fa;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+        padding: 32px 24px;
+    }
+    .employee-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: 'Segoe UI', Courier, monospace;
+        font-size: 1.1em;
+        background: white;
+    }
+    .employee-table th, .employee-table td {
+        border: 1px solid #dee2e6;
+        padding: 12px 16px;
+        text-align: left;
+    }
+    .employee-table th {
+        background: #b22222;
+        color: #fff;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    .employee-table tr:nth-child(even) {
+        background: #f2f2f2;
+    }
+    .employee-table tr:hover {
+        background: #ffe5e5;
+    }
+</style>

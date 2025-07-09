@@ -37,3 +37,4 @@
 /workspaces/livecp0907/LiveCp0907App/obj/Debug/net8.0/LiveCp0907App.pdb
 /workspaces/livecp0907/LiveCp0907App/obj/Debug/net8.0/LiveCp0907App.genruntimeconfig.cache
 /workspaces/livecp0907/LiveCp0907App/obj/Debug/net8.0/ref/LiveCp0907App.dll
+/workspaces/livecp0907/LiveCp0907App/bin/Debug/net8.0/sampledata.json

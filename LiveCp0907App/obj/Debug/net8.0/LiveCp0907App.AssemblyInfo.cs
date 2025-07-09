@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LiveCp0907App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d53449a3b00e54501b68b7e172bc53f0d2440c84")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2632dcd966afcc4c7314729762d1f077b0e0965c")]
 [assembly: System.Reflection.AssemblyProductAttribute("LiveCp0907App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LiveCp0907App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
